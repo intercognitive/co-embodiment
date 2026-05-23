@@ -21,6 +21,14 @@ Smart glasses can provide:
 
 The standards question is how these channels become discoverable and co-habitable without allowing agents to overwhelm the user, violate privacy, or fight over scarce output surfaces.
 
+## Core Scenario
+
+A worker is wearing smart glasses in a warehouse. Intelligence provider X has an agent using the glasses for pick-path guidance: reading shelf labels, confirming item locations, and presenting turn-by-turn instructions.
+
+Another intelligence provider, Y, wants to use the same glasses to solve safety coaching tasks. Provider Y should not need to own the glasses, replace provider X, or rebuild the wearable integration. It should be able to discover the available camera, microphone, IMU, display, and speaker capabilities, request an authorized embodiment session, receive only permitted context, and surface warnings without disrupting critical pick-path guidance.
+
+This is the co-embodiment problem for smart glasses: how can one worn device become a shared embodied interface for multiple task-specific agents?
+
 ## Co-Embodiment Questions
 
 - How do multiple agents share camera and microphone access?
@@ -30,6 +38,9 @@ The standards question is how these channels become discoverable and co-habitabl
 - What is the manifest for available sensors and interaction channels?
 - How does an agent request and release an embodiment session on the glasses?
 - How does a user know which agent is currently observing or acting?
+- How should provider Y discover that glasses currently used by provider X can support a safety-coaching embodiment session?
+- How should the glasses arbitrate between pick-path instructions, safety warnings, notifications, and human override?
+- What must be logged when one agent observes or speaks through a wearable normally used by another agent?
 
 ## Standards Surfaces
 
@@ -40,3 +51,5 @@ Potential standard surfaces include:
 - Display and speaker arbitration model
 - User permission and consent schema
 - Embodied capability manifest for wearable devices
+- Embodiment session request and lease model
+- Observation and interaction audit log
