@@ -14,7 +14,11 @@ A machine-readable description of what an embodied device or environment can exp
 
 The shared use of the same embodied infrastructure by multiple intelligences, applications, or agents.
 
-Example: several AI agents sharing access to the same smart glasses camera, microphone, display, and speaker; or multiple intelligence providers using the same deployed retail robot as a perception and action substrate.
+Example: several AI agents sharing access to the same smart glasses camera, microphone, display, and speaker; or multiple intelligence providers requesting bounded sessions on the same deployed robot.
+
+## Co-Habitable Infrastructure
+
+Embodied infrastructure designed so multiple agents can discover it, understand its capabilities, request access, operate within clear boundaries, and leave auditable traces.
 
 ## Cross-Embodiment
 
@@ -28,6 +32,12 @@ Physical devices and environments that expose perception, spatial context, or ac
 
 Examples include phones, smart glasses, cameras, robots, elevators, doors, shelf sensors, drones, and robotic arms.
 
+## Embodiment Session
+
+A bounded interval in which an agent is granted permission to use one or more capabilities of an embodied device or environment.
+
+An embodiment session may include identity, scope, duration, cost, permitted sensors or actuators, safety limits, priority, and audit requirements.
+
 ## Internet of Actuators
 
 A future layer of physical infrastructure where actuation capabilities can be discovered, permissioned, invoked, audited, and paid for through interoperable protocols.
@@ -40,18 +50,20 @@ A layer of physical infrastructure where sensor capabilities and observations ca
 
 A layer of physical infrastructure where environments have persistent spatial identity, maps, context, permissions, and services that machines and agents can use.
 
-## Perception-First Deployment
-
-A robotics or physical AI deployment strategy that starts by solving valuable observation tasks before attempting high-risk manipulation or locomotion tasks.
-
 ## Robot as Infrastructure
 
-A model where a deployed robot is not only a single-purpose product, but a shared physical substrate that multiple agents or applications can inhabit under clear rules.
+A model where a deployed robot is not only a single-purpose product, but a shared embodied service that multiple agents or applications can discover and inhabit under clear rules.
+
+## Robot Discovery
+
+The process by which an agent finds a robot or embodied service, verifies its identity, learns its capabilities and constraints, and determines how to request access.
+
+## Safety Envelope
+
+The set of limits that constrain how an embodied capability may be used.
+
+Examples include allowed zones, speed limits, force limits, forbidden actions, human override rules, and emergency-stop requirements.
 
 ## Spatial Context Package
 
 A portable bundle of information that helps an embodied device or agent understand a domain, such as site identity, maps, coordinate frames, available services, permissions, and local constraints.
-
-## Territory
-
-A deployed physical domain where a system has earned operational access, customer trust, spatial context, and potential control points for future perception, coordination, or actuation services.

@@ -1,33 +1,31 @@
 # Retail Use Case
 
-Retail is an early candidate for perception-first co-embodiment because stores are complex physical environments with high labor cost, high staff turnover, and many valuable observation tasks.
+Retail is a useful co-embodiment domain because stores contain many people, devices, tasks, maps, policies, and services that multiple agents may need to share.
 
 ## Problem
 
 Retailers often lose productivity because staff do not know what needs to be done, where to go next, or what changed since the last shift. Stores may operate for long hours without consistent manager presence, which makes task assignment, compliance, and knowledge transfer difficult.
 
-## Perception-First Opportunity
+## Shared Embodiment Opportunity
 
-Useful tasks can be performed without manipulation:
+Several embodied surfaces may need to cooperate in the same store:
 
-- Empty shelf detection
-- Planogram and compliance checks
-- Spill, obstruction, and safety observations
-- Task generation for staff
-- Navigation assistance
-- Handover and shift-context capture
-- Order-picking support
+- phones and smart glasses carried by staff,
+- fixed cameras and shelf sensors,
+- mobile robots and cleaning machines,
+- task systems, maps, and AI copilots,
+- third-party agents that need bounded access to store context.
 
-Phones and smart glasses can pre-deploy the environment before mobile robots arrive. Robots can later add persistent night audits and autonomous data capture.
+The standards question is how these surfaces become discoverable and co-habitable without every integration becoming custom.
 
 ## Co-Embodiment Questions
 
 - What store context should be shared between phones, glasses, and robots?
 - How do multiple agents access the same camera, microphone, map, and task list?
 - How should staff, customer, manager, and third-party agent permissions differ?
-- How should a robot expose perception capabilities without exposing unsafe actuation?
+- How should a robot expose available capabilities without exposing unsafe actuation?
 - How should task-generation agents cite the observations that led to a task?
-- How can retailers self-deploy without forward deployed engineers?
+- How should an agent request a bounded embodiment session in a retail domain?
 
 ## Standards Surfaces
 

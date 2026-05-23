@@ -1,32 +1,30 @@
 # Mobile Robots Use Case
 
-Mobile robots can start as perception systems and later become shared infrastructure for action.
+Mobile robots are a core co-embodiment domain because they combine sensors, spatial context, compute, connectivity, locomotion, and sometimes manipulation in one shared body.
 
 ## Problem
 
-Many robotics deployments stall because the robot must solve locomotion, manipulation, perception, safety, operations, and customer ROI at once. The reliability threshold for manipulation and autonomous locomotion can be punishing.
+Many robots are built as closed systems controlled by a single application or operator. That makes it hard for outside agents to discover the robot, understand its available capabilities, request bounded access, or safely share the body with other agents.
 
-## Perception-First Opportunity
+## Shared Embodiment Opportunity
 
-Mobile robots can begin with lower-risk tasks:
+Mobile robots may expose several shared capability classes:
 
-- Night audits
-- Site scanning
-- Inventory and shelf-state capture
-- Security patrol observations
-- Environmental monitoring
-- Data collection for digital twins
-- Staff task generation
+- sensor streams,
+- site maps and spatial context,
+- onboard compute and network access,
+- navigation or repositioning,
+- displays, speakers, lights, or other interaction channels,
+- manipulation or other actuators when present.
 
-Once deployed, a robot with sensors, compute, connectivity, maps, and perhaps latent actuation can become infrastructure that other agents use.
+The standards question is how a robot describes these capabilities, grants access to them, arbitrates competing requests, and maintains a safety envelope.
 
 ## Co-Embodiment Questions
 
 - What should a mobile robot expose as shared capability?
-- How should agents discover the robot and request perception tasks?
+- How should agents discover the robot and request embodiment sessions?
 - How should the robot represent safety limits and restricted actions?
 - How are conflicts resolved between navigation, observation, and future manipulation requests?
-- How do phones and glasses pre-deploy spatial context before the robot arrives?
 - What does it mean for a robot to be a platform for multiple intelligence providers?
 
 ## Standards Surfaces

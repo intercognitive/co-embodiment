@@ -1,40 +1,41 @@
 # Co-Embodiment Working Group
 
-The Co-Embodiment Working Group explores how multiple AI systems can safely, economically, and interoperably share access to embodied infrastructure: sensors, spatial context, actuators, robots, smart glasses, phones, and deployed real-world domains.
+The Co-Embodiment Working Group explores what needs to happen for robots and embodied devices to become discoverable, permissioned, and co-habitable infrastructure, so that multiple agents can safely share embodiment.
 
 ## Thesis
 
-Most robotics companies are trying to perfect locomotion and manipulation before they deploy. That creates a brutal reliability cliff: the robot has to be useful, affordable, safe, and highly reliable before it can escape pilot stage.
+Most embodied systems are built as single-tenant products: one robot, one controlling application, one operator model, one environment integration, one intelligence stack. That makes robots difficult for third-party agents to discover, understand, trust, and inhabit.
 
-We believe a better deployment strategy starts with perception.
+Co-embodiment asks what common interfaces and rules are required for robots to become shared infrastructure.
 
-Perception-first systems can create value earlier, reduce deployment cost, capture real-world territory, and make environments AI-accessible before full locomotion and manipulation are solved. Phones, smart glasses, cameras, and simple robots can become the first substrate for physical AI.
-
-Co-embodiment begins when that substrate can be shared by multiple intelligences.
+A co-habitable robot should be able to describe where it is, what it can sense, what it can do, who may use it, what it costs, what safety limits apply, and how competing agent requests are resolved. Agents should be able to discover that robot, request a bounded embodiment session, use permitted capabilities, and leave behind an auditable record.
 
 ## Working Question
 
-How can multiple AI systems safely share the same embodied infrastructure?
+What needs to happen for robots to become discoverable and co-habitable infrastructure, so that multiple agents can share embodiment?
 
 This includes questions such as:
 
-- What should an embodied device expose to third-party agents?
-- How should agents discover available sensors, spatial context, and actuators?
-- How should permissions, roles, safety boundaries, and economic access be represented?
+- How should robots and embodied devices advertise their capabilities?
+- How should agents discover available robots, sensors, spatial context, and actuators?
+- How should an agent request, start, maintain, and end an embodiment session?
+- How should permissions, roles, safety boundaries, economic access, and audit logs be represented?
 - How should conflicts be resolved when multiple agents want the same embodied resource?
-- How can perception-first deployments become infrastructure for later manipulation and locomotion?
+- What must be standardized so robots can be safely co-habited across vendors, agents, and domains?
 
 ## Scope
 
 The working group is focused on standards and shared language for:
 
-- Robot-as-infrastructure models
-- Shared sensor and perception access
-- Spatial context and environment packages
-- Agent permissions and capability manifests
-- Actuator access, arbitration, and safety boundaries
-- Phones and smart glasses as pre-deployed embodied infrastructure
-- Perception-first deployment strategies for retail, agriculture, logistics, and other physical domains
+- Robot discovery and service advertisement
+- Embodied capability manifests
+- Embodiment session lifecycle
+- Shared access to sensors, spatial context, displays, speakers, locomotion, and actuators
+- Agent identity, authentication, authorization, and delegation
+- Permission, pricing, metering, and settlement models
+- Arbitration, priority, safety boundaries, and human override
+- Observation, action, and decision audit logs
+- Domain context packages for places where robots operate
 
 ## Non-Goals
 
@@ -43,7 +44,7 @@ This working group is not trying to:
 - Build a complete robotics operating system
 - Pick a winning hardware form factor
 - Replace member-owned SDKs, products, or canonical repositories
-- Standardize manipulation or locomotion before there is enough deployment evidence
+- Standardize robot morphology, autonomy stack, or application behavior
 - Certify products before conformance requirements exist
 
 ## How Work Progresses
@@ -69,12 +70,12 @@ meetings/          # Notes and decisions
 
 ## Initial Exploration Areas
 
-- Retail: task generation, shelf state, compliance checks, AI copilots, and robotic night audits
-- Agriculture: crop inspection, disease detection, and perception-first rover deployments
-- Smart glasses: shared access to camera, microphone, IMU, display, and speakers
-- Mobile robots: perception-first deployment and future actuator access
-- Capability manifests: how devices declare sensors, actuators, spatial context, and safety limits
-- Permission and arbitration models: how multiple agents share the same body or environment
+- Discovery: how agents find robots, places, services, and available embodiment surfaces
+- Capability manifests: how robots declare sensors, actuators, spatial context, services, costs, and safety limits
+- Embodiment sessions: how an agent requests, receives, uses, and releases shared embodiment
+- Permission and arbitration models: how multiple agents share the same body, channel, or environment
+- Safety and auditability: how limits, overrides, provenance, and logs are represented
+- Domain examples: retail, agriculture, smart glasses, mobile robots, logistics, and industrial facilities
 
 ## Participation
 

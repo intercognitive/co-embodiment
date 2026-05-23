@@ -1,23 +1,22 @@
 # Agriculture Use Case
 
-Agriculture is an early candidate for perception-first deployment because crop health observations can create large value while keeping deployment risk comparatively low.
+Agriculture is a useful co-embodiment domain because farms may contain rovers, drones, fixed sensors, maps, agronomy systems, and third-party agents that need to share context and capabilities.
 
 ## Problem
 
-Permanent crop operations can lose significant yield to disease, pests, irrigation problems, and other environmental conditions. Many high-value tasks are observation problems before they are manipulation problems.
+Permanent crop operations can lose significant yield to disease, pests, irrigation problems, and other environmental conditions. Many devices and agents may observe, interpret, recommend, or act on the same field context.
 
-## Perception-First Opportunity
+## Shared Embodiment Opportunity
 
-Useful tasks can be performed through observation:
+Several embodied surfaces may need to cooperate in the same field:
 
-- Crop disease detection
-- Growth-stage monitoring
-- Pest and stress detection
-- Yield forecasting
-- Irrigation and microclimate observations
-- Targeted inspection with cameras, phones, drones, or rovers
+- rovers and drones,
+- fixed cameras and environmental sensors,
+- phones and tablets used by field workers,
+- field maps, crop rows, and agronomy records,
+- third-party agents that need bounded access to observations or interventions.
 
-A rover may later carry manipulators, sprayers, or other tools, but the first territory-capturing deployment can be perception.
+The standards question is how these systems discover one another, share field context, and expose capabilities under different permissions for inspection, recommendation, and action.
 
 ## Co-Embodiment Questions
 
@@ -26,6 +25,7 @@ A rover may later carry manipulators, sprayers, or other tools, but the first te
 - How should third-party agronomy agents request data or actions?
 - What permissions are needed for observation versus chemical or mechanical action?
 - How should confidence, provenance, and recommended interventions be represented?
+- How should agents request embodiment sessions on rovers, drones, or fixed infrastructure?
 
 ## Standards Surfaces
 
