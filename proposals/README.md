@@ -4,6 +4,10 @@ This directory is for working drafts that may later become IOSPs.
 
 A proposal here is not an Intercognitive Open Standard. It is a structured draft for discussion.
 
+## Active Drafts
+
+- [Capability bundles and session lifecycle](capability-bundles-session-lifecycle.md)
+
 ## Suggested Draft Template
 
 ```markdown
